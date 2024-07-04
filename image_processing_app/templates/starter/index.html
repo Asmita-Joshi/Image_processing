@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/logoimg.jpg" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Image Processing site</title>
+    
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <img
+          src="img/logoimg.jpg"
+          alt="Bank logo"
+          class="nav__logo"
+          id="logo"
+          designer="Jonas"
+          data-version-number="3.0"/>
+        <h1 style="font-size: 30px;">PixelCraft :Image Processing Site</h1>
+      
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">Features</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">Operations</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--3">Testimonials</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn btn--show-modal" href="#"
+              >Sign in account</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__title">
+        <!-- <h1 onclick="alert('HTML alert')"> -->
+        <h1>
+        PixelCraft:
+          <!-- Green highlight effect -->
+          <span class="highlight">Transforming</span>
+          Image<br />
+          <span class="highlight"> with Magic</span>
+        </h1>
+        <h4>
+          Unveil the Power of Your Imagination with PixelCraft: Transforming Images into Magic.</h4>
+        <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
+        <img
+          src="img/hero.png"
+          class="header__img"
+          alt="Minimalist bank items"
+        />
+      </div>
+    </header>
+
+    <section class="section" id="section--1">
+      <div class="section__title">
+        <h2 class="section__description">Features</h2>
+        <h3 class="section__header">
+          Everything you need in a Image Processing Site and more.
+        </h3>
+      </div>
+
+      <div class="features">
+        <img
+          src="img/digital-lazy.jpg"
+          data-src="img/digital.jpg"
+          alt="Computer"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-monitor"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">One-Click Enhancements</h5>
+          <p>
+            One-Click Enhancements simplify image improvement by offering instant adjustments to brightness, contrast, and saturation with just a single click. This feature caters to users seeking quick and hassle-free enhancements. 
+          </p>
+        </div>
+
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-trending-up"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Smart Filters</h5>
+          <p>
+            Smart Filters revolutionize image editing by providing a diverse array of filters and effects, from vintage styles to modern artistry, all intelligently applied with precision.</p>
+        </div>
+        <img
+          src="img/smartimg-lazy.jpg"
+          data-src="img/smartimg.jpg"
+          alt="Plant"
+          class="features__img lazy-img"
+        />
+
+        <img
+          src="img/inter-lazy.jpg"
+          data-src="img/inter.jpg"
+          alt="Credit card"
+          class="features__img lazy-img"
+        />
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-credit-card"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Interactive Tutorials</h5>
+          <p>
+            Learn and master image processing techniques with interactive tutorials and step-by-step guides, making it easy for beginners to get started.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--2">
+      <div class="section__title">
+        <h2 class="section__description">Operations</h2>
+        <h3 class="section__header">
+          Everything as simple as possible, but no simpler.
+        </h3>
+      </div>
+
+      <div class="operations">
+        <div class="operations__tab-container">
+          <button
+            class="btn operations__tab operations__tab--1 operations__tab--active"
+            data-tab="1"
+          >
+            <span>01</span>Instant Enhancement
+          </button>
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+            <span>02</span>Instant Filters
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            <span>03</span>Instant Cropping
+          </button>
+        </div>
+        <div
+          class="operations__content operations__content--1 operations__content--active"
+        >
+          <div class="operations__icon operations__icon--1">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-upload"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Transform Your Images in the Blink of an Eye!
+          </h5>
+          <p>
+            Instant Enhancement revolutionizes image editing, instantly refining brightness, contrast, and color with precision. Elevate your photos effortlessly, achieving professional-grade results in seconds, and unleash the full potential of your images with just a click.
+          </p>
+        </div>
+
+        <div class="operations__content operations__content--2">
+          <div class="operations__icon operations__icon--2">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-home"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Elevate Your Images with Effortless Artistry.
+          </h5>
+          <p>
+            Instant Filters add a touch of magic to your images, transforming them with a single click into stunning works of art. Explore a vast array of styles and effects, instantly enhancing your photos and unleashing your creativity. Elevate your visuals effortlessly, turning ordinary snapshots into extraordinary masterpieces in an instant.
+          </p>
+        </div>
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-user-x"></use>
+            </svg>
+          </div>
+          <h5 class="operations__header">
+            Effortless Refinement: Instant Cropping for Picture-Perfect Images          </h5>
+          <p>
+            "Instant Cropping streamlines editing with precision, swiftly trimming images to desired proportions. Effortlessly remove distractions and focus on key elements, achieving polished results in seconds. Seamlessly refine composition, ensuring every image tells its story with clarity and impact.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--3">
+      <div class="section__title section__title--testimonials">
+        <h2 class="section__description">Not sure yet?</h2>
+        <h3 class="section__header">
+          Embrace the Future of Image Editing: Liberating Creativity from Traditional Constraints        </h3>
+      </div>
+
+      <div class="slider">
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">Optimize Your Images for Unmatched Visual Impact</h5>
+            <blockquote class="testimonial__text">
+              Transforming images with our platform is the ultimate creative investment, ensuring your visuals shine like never before. Discover the power of precision editing and unleash your artistic vision effortlessly. Elevate your images today and witness the transformative magic unfold before your eyes!"
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-1.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Aarav Lynn</h6>
+              <p class="testimonial__location">San Francisco, USA</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              Streamline Your Visual Journey
+            </h5>
+            <blockquote class="testimonial__text">
+              Simplify Your Visual Creations: Elevate Your Images with Minimalist Editing Tools. Experience Effortless Image Enhancement Today!
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-2.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Miyah Miles</h6>
+              <p class="testimonial__location">London, UK</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="slide">
+          <div class="testimonial">
+            <h5 class="testimonial__header">
+              "Breaking Free from Traditional Editing: Step into a New Era of Image Transformation!            </h5>
+            <blockquote class="testimonial__text">
+              Lines capture the essence of form and structure, guiding the viewer's gaze with precision and grace. They define boundaries, create movement, and imbue images with depth and dimensionality. In the hands of skilled artists, lines become storytellers, weaving narratives that resonate with emotion and meaning
+            </blockquote>
+            <address class="testimonial__author">
+              <img src="img/user-3.jpg" alt="" class="testimonial__photo" />
+              <h6 class="testimonial__name">Francisco Gomes</h6>
+              <p class="testimonial__location">Lisbon, Portugal</p>
+            </address>
+          </div>
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <section class="section section--sign-up">
+      <div class="section__title">
+        <h3 class="section__header">
+          Unlock Your Creative Potential: The Perfect Moment to Start Transforming Images is Now!
+        </h3>
+      </div>
+      <button class="btn btn--show-modal">Open your free account today!</button>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="#">About</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Pricing</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Terms of Use</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Privacy Policy</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Careers</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Blog</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Contact Us</a>
+        </li>
+      </ul>
+      <img src="img/logoimg.jpg" alt="Logo" class="footer__logo" />
+      <p class="footer__copyright">
+        &copy; Copyright by
+        <a
+          class="footer__link twitter-link"
+          target="_blank"
+          href="https://twitter.com/jonasschmedtman"
+        >
+          Rajvardhan Salunkhe
+        </a>
+       Image Processing  Website
+      </p>
+    </footer>
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+       Sign up account in just <span class="highlight">1 minutes</span>
+      </h2>
+      <form method="post">
+        {% csrf_token %}
+      <form class="modal__form">
+        <label for="username">Username</label>
+        <input type="text" />
+        <label>Last Name</label>
+        <input type="text" />
+        <label for="password">Password</label>
+        <input type="password" />
+        <label for="confirm_password">Confirm Password</label>
+        <input type="password"/><br>
+        <button class="btn">Sign Up &rarr;</button>
+      </form>
+      </form>
+      <div class="form-footer">
+        <p>Already have an account? <a href="login">Login</a></p>
+    </div>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

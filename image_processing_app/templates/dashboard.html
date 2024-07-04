@@ -1,0 +1,80 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Processor Dashboard</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            max-width: 800px;
+            /* Increased max-width for better dashboard layout */
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .dashboard-item {
+            margin-bottom: 20px;
+        }
+
+        .dashboard-item p {
+            margin: 0;
+        }
+
+        .download-link {
+            display: inline-block;
+            padding: 8px 16px;
+            font-size: 14px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .download-link:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Image Processor Dashboard</h1>
+        {% if processed_images %}
+            {% for image in processed_images %}
+                <div class="dashboard-item">
+                    <p>Processed File Name: {{ image.processed_image.name }}</p>
+                    <p>Performed Operations: {{ image.operations }}</p>
+                    <a href="{% url 'download_image' image.id %}" class="download-link">Download Again</a>
+                </div>
+            {% endfor %}
+        {% else %}
+            <p>No processed images available.</p>
+        {% endif %}
+    </div>
+</body>
+
+</html>

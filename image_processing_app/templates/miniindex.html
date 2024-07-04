@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Processing</title>
+    <link rel="stylesheet" href="ministyle.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Image Processing</h1>
+        <form action="/process" method="post" enctype="multipart/form-data">
+            <input type="file" name="image" accept="image/*">
+            <img src="jess.jpeg">
+            <br><br>
+            <div class="options">
+                <label><input type="checkbox" name="operation" value="crop"> Crop</label>
+                <label><input type="checkbox" name="operation" value="rotate"> Rotate</label>
+                <label><input type="checkbox" name="operation" value="brightness"> Adjust Brightness</label>
+                <label><input type="checkbox" name="operation" value="noise_reduction"> Noise Reduction</label>
+                <label><input type="checkbox" name="operation" value="dilation"> Dilation</label>
+                <label><input type="checkbox" name="operation" value="erosion"> Erosion</label>
+                <label><input type="checkbox" name="operation" value="emotion_detection"> Emotion Detection</label>
+                <label><input type="checkbox" name="operation" value="face_detection"> Face Detection</label>
+                <label><input type="checkbox" name="operation" value="histogram"> Histogram</label>
+                <!-- Add checkboxes for other operations -->
+            </div>
+            <input type="submit" value="Process">
+        </form>
+    </div>
+   
+</body>
+
+</html>
